@@ -31,11 +31,9 @@ func main() {
 		panic(err)
 	}
 
-	// get the content of message
-	var msgContent = os.Args[4]
-	//if err != nil {
-	//	panic(err)
-	//}
+    // get the content of message
+    var t = time.Now()
+	var msgContent = os.Args[4] + ":time:" + t.Format("2006-01-02 15:04:05")
 
 	for {
 		log.Printf(newsSource + "[INFO]: Publishing to channel " + newsSource)
