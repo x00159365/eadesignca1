@@ -1,0 +1,3 @@
+#! /bin/bash
+# simple script to deploy yaml file
+kubectl replace -f manifests/deployment_d1.yaml

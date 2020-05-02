@@ -1,0 +1,11 @@
+#! /bin/bash
+# simple script to save me typing commands or using arrows to navigate
+
+# version
+IMAGEVERSION=v5
+
+git pull
+docker build -t door1:$IMAGEVERSION door/.
+docker tag door1:$IMAGEVERSION eu.gcr.io/eades-273019/door1:$IMAGEVERSION
+docker push eu.gcr.io/eades-273019/door1:$IMAGEVERSION
+kubectl replace -f manifests/deployment_d1.yaml

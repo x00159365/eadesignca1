@@ -1,0 +1,3 @@
+#! /bin/bash
+# simple script to reconnect to k8s and project in GCP
+gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project eades-273019
