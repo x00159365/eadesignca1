@@ -14,10 +14,10 @@ func main() {
 
 	// MG leave as string
 	// get the door number from command line arg 1
-	doorNum, err := os.Args[1]
-	if err != nil {
-		panic(err)
-	}
+	var newsSource = os.Args[1]
+	//if err != nil {
+//		panic(err)
+//	}
 
 	// get the max number of seconds between entries for the random generator
 	maxSeconds, err := strconv.Atoi(os.Args[2])
@@ -32,16 +32,15 @@ func main() {
 	}
 
 	// get the content of message
-	msgContent, err := os.Args[4]
-	if err != nil {
-		panic(err)
-	}
+	var msgContent = os.Args[4]
+	//if err != nil {
+	//	panic(err)
+	//}
 
 	for {
-		doorName = doorNum
-		log.Printf(doorName + "[INFO]: Publishing to channel " + doorName)
+		log.Printf(newsSource + "[INFO]: Publishing to channel " + newsSource)
 		// the event contains a dummy string "1" - it is the count of events that matters, not the content
-		conn.Do(Cmd(nil, "PUBLISH", doorName, msgContent))
+		conn.Do(Cmd(nil, "PUBLISH", newsSource, msgContent))
 		time.Sleep(time.Duration(rand.Intn(maxSeconds)) * time.Second)
 	}
 
