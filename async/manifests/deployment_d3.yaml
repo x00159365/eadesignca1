@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: door3
-          args: ["3", "300", "redis-service:6379"]
+          args: ["sports", "300", "redis-service:6379", "Latest! Winners vs. Loosers 1:5"]
           image: eu.gcr.io/eades-273019/door1:v1

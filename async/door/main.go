@@ -1,18 +1,20 @@
 package main
 
 import (
-	"os"
 	"log"
+	"math/rand"
+	"os"
 	"strconv"
 	"time"
-	"math/rand"
-	. "github.com/mediocregopher/radix/v3"   // redis api for pub-sub
+
+	. "github.com/mediocregopher/radix/v3" // redis api for pub-sub
 )
 
 func main() {
 
+	// MG leave as string
 	// get the door number from command line arg 1
-	doorNum, err := strconv.Atoi(os.Args[1])
+	doorNum, err := os.Args[1]
 	if err != nil {
 		panic(err)
 	}
@@ -29,11 +31,17 @@ func main() {
 		panic(err)
 	}
 
+	// get the content of message
+	msgContent, err := os.Args[4]
+	if err != nil {
+		panic(err)
+	}
+
 	for {
-		doorName := "door" + strconv.Itoa(doorNum)
+		doorName = doorNum
 		log.Printf(doorName + "[INFO]: Publishing to channel " + doorName)
 		// the event contains a dummy string "1" - it is the count of events that matters, not the content
-		conn.Do(Cmd(nil, "PUBLISH", doorName, "1"))
+		conn.Do(Cmd(nil, "PUBLISH", doorName, msgContent))
 		time.Sleep(time.Duration(rand.Intn(maxSeconds)) * time.Second)
 	}
 
