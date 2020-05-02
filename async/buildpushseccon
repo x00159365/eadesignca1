@@ -1,0 +1,10 @@
+#! /bin/bash
+# simple script to save me typing commands or using arrows to navigate
+
+# version
+IMAGEVERSION=v4
+
+docker build -t seccon:$IMAGEVERSION seccon/.
+docker tag seccon:$IMAGEVERSION eu.gcr.io/eades-273019/seccon:$IMAGEVERSION
+docker push eu.gcr.io/eades-273019/seccon:$IMAGEVERSION
+#kubectl replace -f manifests/seccon.yaml

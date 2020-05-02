@@ -27,6 +27,8 @@ func SetUpPubSub(serverName string, redis_url string, interval time.Duration, wa
 		}
 	}
 
+    // NOTE: "case msg := <-ch: " receive from channel, and assign value to msg. I did think 'msg' is of type PubSubMessage 
+                
 	// run the function that receives on the channels in a separate thread
 	go func() {
 		log.Printf(serverName + "[INFO]: In second thread.")
@@ -35,13 +37,13 @@ func SetUpPubSub(serverName string, redis_url string, interval time.Duration, wa
 			for index, ch := range channels {
 				log.Printf(serverName + "[INFO]:        channel " + channel_names[index])
 				select {
-				case msg := <-ch:
-					process_func(channel_names[index], string(msg.Message))
+				case msg := <-ch: 
+					process_func(channel_names[index], string(msg.Message)) 
 				case <-time.After(wait * time.Millisecond):
 				}
    			}
 			log.Printf(serverName + "[INFO]: Going to sleep for a while.")
 			time.Sleep(interval * time.Millisecond)
 		}
-	}()
+	}
 }

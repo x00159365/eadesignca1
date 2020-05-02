@@ -1,6 +1,7 @@
 package seccon
 
 import (
+    "log"
 	"html/template"
 	"net/http"
 	"time"
@@ -12,7 +13,8 @@ var channelNames []string
 func ProcessMessage(channel_name string, msg_content string) {
 	// the function just counts the messages so message_content goes unused
 	//counts[channel_name]++
-	// MG changing to use the content
+    // MG changing to use the content
+    log.Printf("sec_con::channel_name:" + channel_name + "::msg_content: " + msg_content)
 	counts[channel_name] = msg_content
 }
 

@@ -16,8 +16,8 @@ func main() {
 	// get the door number from command line arg 1
 	var newsSource = os.Args[1]
 	//if err != nil {
-//		panic(err)
-//	}
+	//	panic(err)
+	//}
 
 	// get the max number of seconds between entries for the random generator
 	maxSeconds, err := strconv.Atoi(os.Args[2])
