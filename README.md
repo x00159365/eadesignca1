@@ -10,6 +10,9 @@ Combination of code from Labs 1,2 and 4 from the EA Design module labs.
 2. change sec_con.go to use msg content instead of counting.
 3. to do this added another arg to door yaml manifests, which contained the message from each news source i.e. each 'door' yaml manifest was specific to news, weather or sports
 
+Created bash script to combine commands and help.
+'chmod 700 buildpushdeploy' was used to make is executable 
+
 Used GCP k8s logs viewer to check what was being logged.
 Log viewer Query (which params were specific to my GCP project):
 resource.type="k8s_container"
