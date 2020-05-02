@@ -19,4 +19,7 @@ resource.labels.cluster_name="cluster-1"
 resource.labels.namespace_name="default"
 resource.labels.pod_name="seccon-deployment-8694f47bf9-mr2wv"
 
+For checking go syntax: https://play.golang.org/
+
+Add timestamp to message content to show when message was written to redis
 
