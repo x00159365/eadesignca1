@@ -15,4 +15,4 @@ spec:
       containers:
         - name: door1
           args: ["News", "10", "redis-service:6379", "No news! Is good news ;-)"]
-          image: eu.gcr.io/eades-273019/door1:v5
+          image: eu.gcr.io/eades-273019/door1:v7
