@@ -25,11 +25,16 @@ async url: http://104.197.52.181:31080/
 
 Part 2:
 -------
+1. Looked at pyhton script provided
+2. Looked at curl options. got curl working locally from windows. Save file to determine format of metrics. See appendix Curl format. Then run curl with write out option.
+3. Looked in market place for Prometheus and grafana offerings. Found an option that installs both into cluster. Tried, but it failed twice with 'Does not have minimum availability' on the kube-state-metrics pod. In details, it says innsufficient CPU available. Tips in GKE ui suggest auto-scaling of node pool. could have also gone with cluster, but this seemed a more controlled option. cluster restarted, deleted broken pod, k8s restarted it and looks better.
+4. grafana admin pwd didn't work. 
+ `docker exec -it <name of grafana container> grafana-cli admin reset-admin-password <fill in password>`
 
-
----------
+NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
 
 Dev tools
+---------
 GCP console shell  and cloud editor in browser, used to make code changes
 gcp console used
 - to run bash scripts
@@ -60,4 +65,21 @@ resource.labels.pod_name="seccon-deployment-8694f47bf9-mr2wv"
 Used GCP container registry to check what images were published
 Used GCP kubernetes engine ui useful for looking at details of deployment
 
+References:
+-----------
+1. https://cloud.google.com/kubernetes-engine/docs
+2. https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler
+3. https://github.com/GoogleCloudPlatform/click-to-deploy/blob/master/k8s/prometheus/README.md
+4. 
 
+APPENDIX:
+---------
+1. Curl format
+    time_namelookup:  %{time_namelookup}\n
+    time_connect:  %{time_connect}\n
+    time_appconnect:  %{time_appconnect}\n
+    time_pretransfer:  %{time_pretransfer}\n
+    time_redirect:  %{time_redirect}\n
+    time_starttransfer:  %{time_starttransfer}\n
+    ----------\n
+    time_total:  %{time_total}\n
