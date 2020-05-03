@@ -28,8 +28,23 @@ Part 2:
 1. Looked at pyhton script provided
 2. Looked at curl options. got curl working locally from windows. Save file to determine format of metrics. See appendix Curl format. Then run curl with write out option.
 3. Looked in market place for Prometheus and grafana offerings. Found an option that installs both into cluster. Tried, but it failed twice with 'Does not have minimum availability' on the kube-state-metrics pod. In details, it says innsufficient CPU available. Tips in GKE ui suggest auto-scaling of node pool. could have also gone with cluster, but this seemed a more controlled option. cluster restarted, deleted broken pod, k8s restarted it and looks better.
-4. grafana admin pwd didn't work. 
- `docker exec -it <name of grafana container> grafana-cli admin reset-admin-password <fill in password>`
+4. grafana admin pwd didn't work. tried for a long time to reset pwd. gave up. 
+5. from marketplace: trying telegraf-influxdb-grafana - failed to deploy from marketplace. think it looks permission related. No time to workout. error: backofflimitexceeded
+6. going to deploy prom and graf using Helm chart from local windows machine.
+`helm install mike-grafana grafana`
+got secret password from gcp as it provided a linux command
+7. grabbed cmd to port forward from Services and Ingress UI in GCP
+8. ran port forward in powershell locally. logged in.
+`kubectl --namespace default port-forward $POD_NAME 3000`
+
+9. Created cloud function
+ - used python code py and requirements file provided in lecture
+ - function to execure needed to match the function in the py file.
+
+10. plan is to collect the data using lab4 (calling CF example, can set it up like the sportsfetcher and tear it down again also. or like a door.)
+
+ 
+
 
 NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
 
