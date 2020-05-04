@@ -1,0 +1,55 @@
+
+#!/bin/bash
+
+# Define a timestamp function
+timestamp() {
+  date +"%Y-%m-%d_%H-%M-%S-%N"
+}
+
+echo seccon
+echo ---
+timestamp
+kubectl delete pod seccon-deployment-7f55c85994-9mf54
+timestamp
+kubectl get pods
+echo -HH-
+
+echo door1
+echo ---
+timestamp
+kubectl delete pod door1-deployment-5d5d46fb98-fbw5k
+timestamp
+kubectl get pods
+echo -HH-
+
+echo door2
+echo ---
+timestamp
+kubectl delete pod door2-deployment-6949998f5d-p2stg
+timestamp
+kubectl get pods
+echo -HH-
+
+echo atn
+echo ---
+timestamp
+kubectl delete pod atn-deployment-6654766874-6mwsg
+timestamp
+kubectl get pods
+echo -HH-
+
+echo nf
+echo ---
+timestamp
+kubectl delete pod nf-deployment-bb496d958-8rvft
+timestamp
+kubectl get pods
+echo -HH-
+
+echo wf
+echo ---
+timestamp
+kubectl delete pod wf-deployment-8457978c9f-ql6kh
+timestamp
+kubectl get pods
+echo -HH-
