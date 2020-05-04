@@ -99,7 +99,9 @@ pd_deleter, which had timestamps and used
 kubectl delete pod
 kubectl get pods
 Then looked at timings.
-Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket and saved to repo under tests. 
+Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket and saved to repo under tests. and pushed to repo here: https://github.com/x00159365/eadesignca1/blob/master/tests/barchart.png
+
+![alt text](https://github.com/x00159365/eadesignca1/blob/master/tests/barchart.png)
 
 
 NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
