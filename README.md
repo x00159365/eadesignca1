@@ -36,6 +36,7 @@ got secret password from gcp as it provided a linux command
 7. grabbed cmd to port forward from Services and Ingress UI in GCP
 8. ran port forward in powershell locally. logged in.
 `kubectl --namespace default port-forward $POD_NAME 3000`
+url http://127.0.0.1:8080/
 
 9. Created cloud function
  - used python code py and requirements file provided in lecture
@@ -108,7 +109,12 @@ References:
 1. https://cloud.google.com/kubernetes-engine/docs
 2. https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler
 3. https://github.com/GoogleCloudPlatform/click-to-deploy/blob/master/k8s/prometheus/README.md
-4. 
+4. https://docs.influxdata.com/influxdb/v1.2/introduction/installation/ - https://docs.influxdata.com/influxdb/v1.2/guides/querying_data/
+5. https://www.npmjs.com/package/newman + https://www.npmjs.com/package/newman#external-reporters
+6. https://github.com/vs4vijay/newman-reporter-influxdb
+7. https://github.com/GoogleCloudPlatform/click-to-deploy/blob/master/k8s/prometheus/README.md
+8. https://grafana.com/
+9. 
 
 APPENDIX:
 ---------
