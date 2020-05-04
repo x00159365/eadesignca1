@@ -2,7 +2,7 @@
 # simple script to save me typing commands or using arrows to navigate
 
 # version
-IMAGEVERSION=v4
+IMAGEVERSION=v5
 
 docker build -t seccon:$IMAGEVERSION seccon/.
 docker tag seccon:$IMAGEVERSION eu.gcr.io/eades-273019/seccon:$IMAGEVERSION

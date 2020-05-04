@@ -2,7 +2,7 @@
 # simple script to save me typing commands or using arrows to navigate
 
 # version
-IMAGEVERSION=v7
+IMAGEVERSION=v8
 
 git pull
 docker build -t door1:$IMAGEVERSION door/.

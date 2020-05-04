@@ -40,7 +40,7 @@ got secret password from gcp as it provided a linux command
 9. Created cloud function
  - used python code py and requirements file provided in lecture
  - function to execure needed to match the function in the py file.
-
+ - tested and saved file here: https://console.cloud.google.com/storage/browser/_details/plotstorage/aname.png?project=eades-273019
 ---
 10. plan is to collect the data using lab4 (calling CF example, can set it up like the sportsfetcher and tear it down again also. or like a door.)
 ---

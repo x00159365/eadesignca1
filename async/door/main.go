@@ -29,15 +29,15 @@ func main() {
 	conn, err := Dial("tcp", os.Args[3])
 	if err != nil {
 		panic(err)
-    }
-    
-    var num int = 1
+	}
 
-    for {
-        // get the content of message
-        var t = time.Now()
-        var msgContent = os.Args[4] + ":update"+strconv.Itoa(num)+"::" + t.Format("2006-01-02 15:04:05")
-        num++
+	var num int = 1
+
+	for {
+		// get the content of message
+		var t = time.Now()
+		var msgContent = os.Args[4] + ":update time" + strconv.Itoa(num) + "::" + t.Format("2006-01-02 15:04:05")
+		num++
 		log.Printf(newsSource + "[INFO]: Publishing to channel " + newsSource + " ::msg:" + msgContent)
 		// the event contains a dummy string "1" - it is the count of events that matters, not the content
 		conn.Do(Cmd(nil, "PUBLISH", newsSource, msgContent))
