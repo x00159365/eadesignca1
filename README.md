@@ -62,7 +62,10 @@ got secret password from gcp as it provided a linux command
 - Ran newman tests, and was able to run a select from the CLI and see the data in the db
 - Setup dashboard in grafana to plot the data from the db
 18. added a delay to newman run, so that graph might look better
-19. 
+----
+19. async version stopped working. made updates and redeployed (pushed new images and replaced, back up!)
+----
+20. duplicated postman tests. 
 
 
 

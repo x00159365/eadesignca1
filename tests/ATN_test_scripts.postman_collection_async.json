@@ -23,7 +23,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -63,7 +63,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -103,7 +103,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -143,7 +143,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -183,7 +183,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -223,7 +223,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -263,7 +263,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -303,7 +303,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -343,7 +343,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -383,7 +383,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -423,7 +423,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -463,7 +463,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -503,7 +503,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -543,7 +543,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -583,7 +583,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -623,7 +623,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -663,7 +663,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -703,7 +703,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -743,7 +743,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
@@ -783,7 +783,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://34.66.193.129:31916/allthenews?style=plain",
+					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
 						"34",
