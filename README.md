@@ -105,7 +105,7 @@ Used graphing function to plot the bar chart graph by using the test function. d
 
 Above barchart shows 6 service recovery averages in seconds. First 3 are Async services (seccon, door1, door2). last 3 are sync services (atn, nf, wf). 
 
-NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
+NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better. (didn't have time to try this.)
 
 Dev tools
 ---------
