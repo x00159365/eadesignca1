@@ -78,8 +78,9 @@ cmd to run sync tests:
 
 cmd to run async tests:
 `newman run ATN_test_scripts.postman_collection_async.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
+
 ---
-21. got sick of port forwarding to grafana, created an external IP using ingress.
+21. got sick of port forwarding to grafana, created an external IP using ingress in GKE UI.
 ---
 22. looked at lots of options to measure the pod recovery, strange that this is not provided.
 - tried kube-state-metrics install as per datadog blog.
@@ -90,9 +91,6 @@ kubectl delete pod
 kubectl get pods
 Then looked at timings.
 Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket and saved to repo under tests. 
-
-
-
 
 
 NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
