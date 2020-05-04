@@ -41,9 +41,29 @@ got secret password from gcp as it provided a linux command
  - used python code py and requirements file provided in lecture
  - function to execure needed to match the function in the py file.
 
+---
 10. plan is to collect the data using lab4 (calling CF example, can set it up like the sportsfetcher and tear it down again also. or like a door.)
-
+---
  
+11. Looking at postman again. Can send results to influxdb using newman
+12. Used Helm to install influxdb to k8s, plan is to use Grafana to plot this.
+- to connect using port forwarding: kubectl port-forward --namespace default $(kubectl get pods --namespace default -l app=mike-influxdb -o jsonpath='{ .items[0].metadata.name }') 8086:8086
+- port forwarding failed. trying to expose from k8s ui using 'expose' option in pod details. TCP:80 and load balancer
+13. installed newman locally  `npm install -g newman`
+14. installed newman-reporter-influxdb `npm install -g newman-reporter-influxdb`
+15. this will run the collection of tests I saved from postman, but I need to authenticate with influxdb. lots of issues trying to get this going.
+16. checked influxdb, authentication set by default. updated Helm chart values yaml and delete/reinstall using Helm
+- this gave errors during install, but eventually returned ok. could get user and pwd from GCP cloud shell using commands shown in appendix 2. 
+- Exposed ip again using k8s UI in GCP. copied port forwarding address. setup locally.
+- Downloaded influxdb cli, tried to connect. issues. 
+- tried connecting to influx cli inside the pod, using ssh command below in appendix 2
+- the service ingress was targeting the wrong port. working after that!
+- once connected with the influxdb cli, created the database
+- Ran newman tests, and was able to run a select from the CLI and see the data in the db
+- Setup dashboard in grafana to plot the data from the db
+18. added a delay to newman run, so that graph might look better
+19. 
+
 
 
 NOTE: for kill/restart could try updating the surge option in cluster details to see if it makes this better.
@@ -98,3 +118,31 @@ APPENDIX:
     time_starttransfer:  %{time_starttransfer}\n
     ----------\n
     time_total:  %{time_total}\n
+
+2. Helm influxdb notes:
+NOTES from influxdb Helm install:
+
+InfluxDB can be accessed via port 8086 on the following DNS name from within your cluster:
+
+- http://mike3-influxdb.default:8086
+
+You can easily connect to the remote instance with your local influx cli. To forward the API port to localhost:8086 run the following:
+
+- kubectl port-forward --namespace default $(kubectl get pods --namespace default -l app=mike3-influxdb -o jsonpath='{ .items[0].metadata.name }') 8086:8086
+
+You can also connect to the influx cli from inside the container. To open a shell session in the InfluxDB pod run the following:
+
+- kubectl exec -i -t --namespace default $(kubectl get pods --namespace default -l app=mike3-influxdb -o jsonpath='{.items[0].metadata.name}') /bin/sh
+
+To tail the logs for the InfluxDB pod run the following:
+
+- kubectl logs -f --namespace default $(kubectl get pods --namespace default -l app=mike3-influxdb -o jsonpath='{ .items[0].metadata.name }')
+
+To retrieve the default user name:
+
+- echo $(kubectl get secret mike3-influxdb-auth -o "jsonpath={.data['influxdb-user']}" --namespace default | base64 --decode)
+
+To retrieve the default user password:
+
+- echo $(kubectl get secret mike3-influxdb-auth -o "jsonpath={.data['influxdb-password']}" --namespace default | base64 --decode)
+
