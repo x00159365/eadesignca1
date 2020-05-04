@@ -26,6 +26,7 @@ sync urls:
 - http://34.66.193.129:31916/allthenews?style=plain
 - http://34.66.193.129:31916/allthenews?style=colourful
 - http://34.66.193.129:31916/allthenews?style=blackandwhite
+
 async url:
 - http://104.197.52.181:31080/
 
