@@ -59,7 +59,12 @@ url http://127.0.0.1:8080/
 - Downloaded influxdb cli, tried to connect. issues. 
 - tried connecting to influx cli inside the pod, using ssh command below in appendix 2
 - the service ingress was targeting the wrong port. working after that!
-- once connected with the influxdb cli, created the database
+- once connected with the influxdb cli, created the database. 
+Some influx cli commands:
+`create datanase mydb`
+`show databases`
+`SELECT * from atnasync`
+
 - Ran newman tests, and was able to run a select from the CLI and see the data in the db
 - Setup dashboard in grafana to plot the data from the db
 18. added a delay to newman run, so that graph might look better
@@ -68,6 +73,11 @@ url http://127.0.0.1:8080/
 ----
 20. duplicated postman tests.
 - didn't work, postmand has a guid for every collection. so need to create another collection manually as opposed to working with the json.
+cmd to run sync tests:
+- `newman run ATN_test_scripts.postman_collection.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
+
+cmd to run async tests:
+`newman run ATN_test_scripts.postman_collection_async.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
 ---
 21. got sick of port forwarding to grafana, created an external IP using ingress.
 ---
@@ -79,7 +89,7 @@ pd_deleter, which had timestamps and used
 kubectl delete pod
 kubectl get pods
 Then looked at timings.
-Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket.  
+Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket and saved to repo under tests. 
 
 
 
@@ -130,7 +140,8 @@ References:
 7. https://github.com/GoogleCloudPlatform/click-to-deploy/blob/master/k8s/prometheus/README.md
 8. https://grafana.com/
 9. https://www.datadoghq.com/blog/monitoring-kubernetes-performance-metrics/
-10. 
+10. https://github.com/johanhaleby/kubetail
+
 
 APPENDIX:
 ---------
