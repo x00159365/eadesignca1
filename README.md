@@ -81,9 +81,11 @@ Some influx cli commands:
 20. duplicated postman tests.
 - didn't work, postmand has a guid for every collection. so need to create another collection manually as opposed to working with the json.
 cmd to run sync tests:
-- `newman run ATN_test_scripts.postman_collection.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
+
+`newman run ATN_test_scripts.postman_collection.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
 
 cmd to run async tests:
+
 `newman run ATN_test_scripts.postman_collection_async.json -r influxdb --reporter-influxdb-server 34.66.228.1 --reporter-influxdb-port 80 --reporter-influxdb-name mydb --reporter-influxdb-measurement atn --reporter-influxdb-username admin --reporter-influxdb-password 1RJCMjQl5N --delay-request 500`
 
 ---
