@@ -66,7 +66,9 @@ url http://127.0.0.1:8080/
 ----
 19. async version stopped working. made updates and redeployed (pushed new images and replaced, back up!)
 ----
-20. duplicated postman tests. 
+20. duplicated postman tests.
+- didn't work, postmand has a guid for every collection. so need to create another collection manually as opposed to working with the json.
+
 
 
 

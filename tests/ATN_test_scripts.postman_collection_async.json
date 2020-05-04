@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "8dd43429-e12e-498a-9eb0-e17b4394a15f",
-		"name": "ATN test scripts",
+		"_postman_id": "6d98c2bd-ad95-4e0f-82c7-cc42ef75a400",
+		"name": "ATN Async Test scripts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5be592ec-2c9b-4631-9358-385f2d829f88",
+						"id": "00ccfa27-5519-4324-9db9-b1f1e242c5b5",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -26,21 +26,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -51,7 +42,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "718094a4-d47b-41b1-bd87-6695cfe04dcf",
+						"id": "54fabc22-16e4-4acc-8928-3acc1d186329",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -66,21 +57,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -91,7 +73,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "06e4d2f9-b8f3-4d54-bff9-e8b1359b432b",
+						"id": "edb8ae6e-c81c-4a18-b490-1cb03e646617",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -106,21 +88,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -131,7 +104,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "194c7e94-edbc-4575-94f6-70fbf3255612",
+						"id": "5a09f7df-73e7-4804-93d4-7dba2941af79",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -146,21 +119,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -171,7 +135,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "1f25ed59-3729-4c79-876e-c7a892ffd2a5",
+						"id": "6a80b19a-b67d-4d5a-a6d3-d1286d5d5b72",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -186,21 +150,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -211,7 +166,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ce1e4a3d-4bdc-4d93-82d2-9f016462ceb2",
+						"id": "f4c7fe12-743f-42f4-9e8e-ab1d7b167350",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -226,101 +181,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ATN async get Copy Copy Copy Copy",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "e8316ec1-2356-4092-803f-65c1984ec9ec",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://35.188.16.190:31080",
-					"protocol": "http",
-					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
-					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ATN async get Copy Copy Copy Copy Copy",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "44b53d83-56db-4056-b7d8-698db09fe2b6",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://35.188.16.190:31080",
-					"protocol": "http",
-					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
-					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -331,7 +197,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "095ae4ce-51e7-4672-b0ab-4908e82782ef",
+						"id": "de56546a-dd72-403b-8433-4f0717bb1bd9",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -346,21 +212,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -371,7 +228,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "36346dd9-0fc0-46c4-8459-e19528b9f05f",
+						"id": "30fa6730-f0ab-472c-a51a-4b798557fd9c",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -386,21 +243,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -411,7 +259,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3ae4530a-9519-4829-8e24-a221e5eeab87",
+						"id": "5dfe320b-9496-43be-bfa1-0321293b1038",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -426,21 +274,74 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
+					"port": "31080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8c1a5ba-c4fb-4879-ac69-2b8a55f0a8e1",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://35.188.16.190:31080",
+					"protocol": "http",
+					"host": [
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "16290f23-9e32-41c7-bc17-183e1c7117b3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://35.188.16.190:31080",
+					"protocol": "http",
+					"host": [
+						"35",
+						"188",
+						"16",
+						"190"
+					],
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -451,7 +352,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d90e8390-3d5b-4ca4-9869-a0ce7acf5927",
+						"id": "df593086-6e37-4b12-ac5d-86684e961a67",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -466,21 +367,12 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
@@ -491,7 +383,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "33d864b7-99e7-480d-8fcb-cccaf90cf952",
+						"id": "4b03e4d9-503e-45bc-83cb-241497490948",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -506,32 +398,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "8490d5ae-0b55-42d2-816b-9b3d92bef1d3",
+						"id": "f967cd29-c995-49fc-9b63-ea89af690181",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -546,32 +429,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "ea23df56-b249-42ee-935e-7764da754982",
+						"id": "13ccc6f5-3a3e-462e-bb38-10340ea33a0d",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -586,32 +460,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "44f08909-bdca-4497-9fae-79a8eeea42d4",
+						"id": "85404733-94e2-4f78-ad8c-c7a4ba772393",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -626,32 +491,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "30dd92b8-499d-4346-8c15-c87e3b0ef082",
+						"id": "6f59cbe5-71a0-432a-8306-f0b1d6655ede",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -666,32 +522,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "359c5f77-18af-4e72-8cca-3a45b4103cc6",
+						"id": "da5beaed-69e2-4062-a54d-8fdac1213509",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -706,32 +553,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "33774d4b-09ac-4624-8855-d70cd5dda989",
+						"id": "6177e06b-04e8-41f8-a0fb-b2891cd7e263",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -746,32 +584,23 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "ATN async get Copy Copy",
+			"name": "ATN async get Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy Copy",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "eeda2526-bd2c-4586-b287-f51b23aff24e",
+						"id": "19ce52da-6e49-4cf2-89f1-4adf864e61ec",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 						],
@@ -786,46 +615,15 @@
 					"raw": "http://35.188.16.190:31080",
 					"protocol": "http",
 					"host": [
-						"34",
-						"66",
-						"193",
-						"129"
+						"35",
+						"188",
+						"16",
+						"190"
 					],
-					"port": "31916",
-					"path": [
-						"allthenews"
-					],
-					"query": [
-						{
-							"key": "style",
-							"value": "plain"
-						}
-					]
+					"port": "31080"
 				}
 			},
 			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"id": "06d2bb9a-e55f-431e-b124-98ce9a7c4fd8",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"id": "99d9d036-7a45-484d-9164-35ba6cdd3c7c",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
 		}
 	],
 	"protocolProfileBehavior": {}
