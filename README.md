@@ -68,6 +68,19 @@ url http://127.0.0.1:8080/
 ----
 20. duplicated postman tests.
 - didn't work, postmand has a guid for every collection. so need to create another collection manually as opposed to working with the json.
+---
+21. got sick of port forwarding to grafana, created an external IP using ingress.
+---
+22. looked at lots of options to measure the pod recovery, strange that this is not provided.
+- tried kube-state-metrics install as per datadog blog.
+23. tried teh k8s dashboard, which looked promising, but ran out of time.
+24. in the end, ran out of time. created a crude bash script
+pd_deleter, which had timestamps and used
+kubectl delete pod
+kubectl get pods
+Then looked at timings.
+Used graphing function to plot the bar chart graph by using the test function. dirty. graph stored in storage bucket.  
+
 
 
 
@@ -116,7 +129,8 @@ References:
 6. https://github.com/vs4vijay/newman-reporter-influxdb
 7. https://github.com/GoogleCloudPlatform/click-to-deploy/blob/master/k8s/prometheus/README.md
 8. https://grafana.com/
-9. 
+9. https://www.datadoghq.com/blog/monitoring-kubernetes-performance-metrics/
+10. 
 
 APPENDIX:
 ---------
