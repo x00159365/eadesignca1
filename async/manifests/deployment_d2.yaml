@@ -15,4 +15,4 @@ spec:
       containers:
         - name: door2
           args: ["weather", "240", "redis-service:6379", "The weather is going to be good :-)"]
-          image: eu.gcr.io/eades-273019/door1:v9
+          image: eu.gcr.io/eades-273019/door1:v10

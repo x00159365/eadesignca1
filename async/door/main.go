@@ -35,7 +35,7 @@ func main() {
 	for {
 		// get the content of message
 		var t = time.Now()
-		var msgContent = os.Args[4] + ":update time" + strconv.Itoa(num) + "::" + t.Format("2006-01-02 15:04:05")
+		var msgContent = os.Args[4] + ":update " + strconv.Itoa(num) + "::" + t.Format("2006-01-02 15:04:05")
 		num++
 		log.Printf(newsSource + "[INFO]: Publishing to channel " + newsSource + " ::msg:" + msgContent)
 		// the event contains a dummy string "1" - it is the count of events that matters, not the content
