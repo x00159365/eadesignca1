@@ -1,10 +1,14 @@
 # eadesignca1
 Repo to house code for EA Design CA
-Combination of code from Labs 1,2 and 4 from the EA Design module labs.
+Combination of code from Labs 1,2 and 4 from the EA Design module labs. The 2 main folders for code are:
+- 'Sync' folder contains the source from all the news lab, which is the sync version of system
+- 'async' folder contains the source from lab3, which has been modified to provide async version of 'all the news' system.
 
-- Sync folder contains the source from all the news lab, which is the sync version of system
+- 'tests' folder houses the postman test collection json files that were used to test for response times.
 
-- async folder contains the source from lab3, which has been modified to provide async version of 'all the news' system.
+- 'GoSample' was just for test GO code. 
+- 'curl' folder was just to preserve curl output formatting options
+
 
 Part 1:
 -------
